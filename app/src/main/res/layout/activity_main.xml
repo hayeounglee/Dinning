@@ -20,7 +20,7 @@
     <ImageView
         android:layout_width="84dp"
         android:layout_height="106dp"
-        android:src="@drawable/___color"
+        android:src="@drawable/___color"/>
 
     <Button
         android:id="@+id/Log"

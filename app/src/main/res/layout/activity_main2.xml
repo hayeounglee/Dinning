@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="@string/room"
+        android:padding="5dp"
+        android:textSize="22dp"
+        android:gravity="bottom|center"
+        android:fontFamily="@font/patrichand"/>
+
+    <Button
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:text="@string/alarm_set"
+        android:textSize="28sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_search"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search"
+            android:inputType="textCapWords"
+            android:textColor="#363A43"
+            android:textColorHint="#7A8089"
+            android:fontFamily="@font/patrichand" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/room_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Dinner"
+                android:textSize="30sp"
+                android:fontFamily="@font/patrichand" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:text="Host name : xxx"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:text="join"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    
+
+</LinearLayout>

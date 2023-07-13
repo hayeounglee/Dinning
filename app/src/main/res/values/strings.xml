@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dinning</string>
+    <string name="Log_In">Log in</string>
+    <string name="Sign">Sign Up</string>
+    <string name="title">Welcome to
+        Dinning Call</string>
+    <string name="room">Room List</string>
+    <string name="alarm_set">stop Alarm!</string>
+</resources>
