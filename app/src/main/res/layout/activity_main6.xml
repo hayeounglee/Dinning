@@ -19,7 +19,7 @@
     <ImageView
         android:layout_width="140dp"
         android:layout_height="177dp"
-        android:src="@drawable/___color_ek1"
+        android:src="@drawable/___color_ek1"/>
 
     <TextView
         android:id="@+id/time"
