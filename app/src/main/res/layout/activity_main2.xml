@@ -16,7 +16,7 @@
         android:padding="5dp"
         android:textSize="22dp"
         android:gravity="bottom|center"
-        android:fontFamily="@font/patrichand"/>
+        />
 
     <Button
         android:id="@+id/alarm"
@@ -44,7 +44,7 @@
             android:inputType="textCapWords"
             android:textColor="#363A43"
             android:textColorHint="#7A8089"
-            android:fontFamily="@font/patrichand" />
+           />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,7 +70,7 @@
                 android:gravity="left"
                 android:text="Dinner"
                 android:textSize="30sp"
-                android:fontFamily="@font/patrichand" />
+                />
 
             <TextView
                 android:id="@+id/tv_description"
