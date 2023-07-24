@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context=".room_list"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="24dp">
-    
+    android:padding="23dp"
+    android:background="@drawable/background_drawing_view_layout">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="57dp"
@@ -19,40 +20,53 @@
         />
 
     <Button
-        android:id="@+id/alarm"
+        android:id="@+id/stop_alarm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-
         android:text="@string/alarm_set"
         android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_paint_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_search"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="30dp"
-
         >
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_search"
-            android:layout_width="match_parent"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint="search"
             android:inputType="textCapWords"
             android:textColor="#363A43"
             android:textColorHint="#7A8089"
-           />
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/add_room"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/vector_ek3" />
+    </LinearLayout>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:elevation="5dp"
         app:cardCornerRadius="8dp">
@@ -94,6 +108,6 @@
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
-    
+
 
 </LinearLayout>

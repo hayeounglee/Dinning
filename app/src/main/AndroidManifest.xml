@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".EmployeeApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dinning"
         tools:targetApi="31">
+        <activity
+            android:name=".member_list"
+            android:exported="false" />
+        <activity
+            android:name=".room_list"
+            android:exported="false" />
         <activity
             android:name=".MainActivity6"
             android:exported="false" />
@@ -23,9 +30,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

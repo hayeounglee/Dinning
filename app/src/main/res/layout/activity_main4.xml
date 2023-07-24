@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:padding="16dp"
+    tools:context=".MainActivity4"
+    android:padding="23dp"
+    android:background="@drawable/background_drawing_view_layout"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -18,8 +19,8 @@
         />
 
     <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/vector" />
     <TextView
         android:layout_width="wrap_content"
@@ -47,7 +48,7 @@
         android:layout_marginTop="3dp">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_id"
+            android:id="@+id/et_user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="name"
@@ -61,12 +62,12 @@
 
 
     <Button
-        android:id="@+id/btn_join"
+        android:id="@+id/btn_finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/black"
-        android:text="finished"
+        android:text="finish"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:layout_gravity="right|bottom"

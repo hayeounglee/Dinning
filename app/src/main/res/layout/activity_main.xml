@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:gravity="center_horizontal"
-    android:padding="16dp"
+    android:padding="23dp"
     android:orientation="vertical"
+    android:background="@drawable/background_drawing_view_layout"
     >
     
     <TextView
@@ -20,7 +21,9 @@
     <ImageView
         android:layout_width="84dp"
         android:layout_height="106dp"
-        android:src="@drawable/___color"/>
+        android:src="@drawable/___color"
+        android:layout_marginTop="45dp"
+        />
 
     <Button
         android:id="@+id/Log"
